@@ -94,6 +94,7 @@ src/estilos/              exemplos da galeria, rodam sem vídeo
 src/_shared/              primitivas: synchronized-split.tsx (obrigatória em telas divididas), figurinha.tsx (figurinhas da biblioteca), metadata.ts
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
 tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho B)
+tools/recortar_figurinha.py  recorte de figurinha (contorno branco sobre fundo liso) para PNG transparente com borda suave
 ```
 
 - Numeração: `NNN. slug`, três dígitos, igual em `projetos/` e `edicoes/`. Novo projeto = maior número + 1. O prefixo numérico não entra no slug de `src/videos/` nem nos ids de composição.

@@ -34,7 +34,7 @@ O componente entra com mola elástica, balança e flutua de leve e sai encolhend
 1. Só entra aqui o que é **genérico**: nada de produto, marca, pessoa ou texto de um vídeo específico. O que for de um vídeo só fica em `projetos/<NNN. nome>/`.
 2. Gere no mesmo estilo. No meta.ai (Nível 2 · Meta AI, [guia 8](../../../guias/8-nivel-2-meta-ai.md)), o PNG já vem transparente:
    > glossy 3D icon sticker of `<objeto>`, thick white die-cut outline, soft drop shadow, vibrant colors, centered, transparent background, 1:1, no text, no letters
-3. Confira a borda: se sobrar magenta ou fundo, limpe antes de salvar.
+3. Se a imagem vier com fundo (o Flow, por exemplo, não entrega transparência), peça fundo cinza liso e recorte com `python tools/recortar_figurinha.py entrada.jpg saida.png`, que deixa a borda suave. Confira a borda: se sobrar magenta ou fundo, limpe antes de salvar.
 4. Use nome curto em português, com hífen (`selo-garantia.png`), e anote em `LOCAL.md` o que é e quando usar.
 5. Não altere a tabela acima nem o `_catalogo.jpg`: eles são do pacote inicial que vai no repositório.
 

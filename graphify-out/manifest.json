@@ -12,10 +12,10 @@
     "semantic_hash": "6dbaf3458878d251e16987a92792e3a4"
   },
   "remotion.config.ts": {
-    "mtime": 1791522786.4362087,
-    "seen": 1792387046.7199383,
-    "ast_hash": "1e508c1030baea6c07f98ee558283db9",
-    "semantic_hash": "1e508c1030baea6c07f98ee558283db9"
+    "mtime": 1792431541.6460583,
+    "seen": 1792431573.2224174,
+    "ast_hash": "411e5aa2534db1f00da5bc9c1c09797a",
+    "semantic_hash": ""
   },
   "scripts/check-split-layouts.mjs": {
     "mtime": 1791522786.4367547,
@@ -24,10 +24,10 @@
     "semantic_hash": "7f4579021f82fa247db5044eb1f59dff"
   },
   "scripts/instalar.mjs": {
-    "mtime": 1791522786.4367547,
-    "seen": 1792387046.7199416,
-    "ast_hash": "02f4e11dad3fd86195a93d455fbe9a84",
-    "semantic_hash": "02f4e11dad3fd86195a93d455fbe9a84"
+    "mtime": 1792431585.5360632,
+    "seen": 1792431589.385312,
+    "ast_hash": "31ad117be239b5ecfc286ed879e00bce",
+    "semantic_hash": ""
   },
   "src/Root.tsx": {
     "mtime": 1792393604.102476,
@@ -108,9 +108,9 @@
     "semantic_hash": "97d01e335f1ab7a4a5e053c626a68b57"
   },
   "CLAUDE.md": {
-    "mtime": 1792427789.21301,
-    "seen": 1792427792.2733815,
-    "ast_hash": "fb6c6a08bc2c287804000dce8db32086",
+    "mtime": 1792431569.7192504,
+    "seen": 1792431573.2224557,
+    "ast_hash": "ae1d68b870bcabfd318fc1cc357b3111",
     "semantic_hash": ""
   },
   "README.md": {
@@ -126,15 +126,15 @@
     "semantic_hash": "0f9c7ba5c0c531fdeba95e9b4ada71d9"
   },
   "guias/1-primeiros-passos.md": {
-    "mtime": 1792427545.735608,
-    "seen": 1792427568.4193377,
-    "ast_hash": "7c476afd18e4a343be67bb40982cbffe",
+    "mtime": 1792431569.7137723,
+    "seen": 1792431573.2224607,
+    "ast_hash": "676f9b0bee550a02cdc061e6642d7cd1",
     "semantic_hash": ""
   },
   "guias/2-nivel-1-remotion.md": {
-    "mtime": 1792427545.7359438,
-    "seen": 1792427568.4193413,
-    "ast_hash": "21eb0fe9e3b057d58a8cddc12c3d4818",
+    "mtime": 1792430689.6466987,
+    "seen": 1792430697.1974792,
+    "ast_hash": "f1b4bc091b99b17c757c80664a687945",
     "semantic_hash": ""
   },
   "guias/3-manual-remotion.md": {
@@ -156,9 +156,9 @@
     "semantic_hash": "179aea97c810dd7208cf4269d06e788c"
   },
   "guias/6-nivel-2-google-flow.md": {
-    "mtime": 1792393604.102476,
-    "seen": 1792393607.1387413,
-    "ast_hash": "c3e3383fdf82088cb7c690b2de082847",
+    "mtime": 1792431569.7137723,
+    "seen": 1792431573.2224686,
+    "ast_hash": "29c61905844d415eb38302fe5819fac3",
     "semantic_hash": ""
   },
   "projetos/000. exemplo/plano.md": {
@@ -210,9 +210,9 @@
     "semantic_hash": ""
   },
   "guias/8-nivel-2-meta-ai.md": {
-    "mtime": 1792427545.7369807,
-    "seen": 1792427568.419371,
-    "ast_hash": "837a186691178b7630be216e6f9e9675",
+    "mtime": 1792431569.7137723,
+    "seen": 1792431573.2224717,
+    "ast_hash": "0988dcc590de948587c1035b9b9bf449",
     "semantic_hash": ""
   },
   "src/_shared/figurinha.tsx": {
@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "projetos/_biblioteca/figurinhas/LEIA-ME.md": {
-    "mtime": 1792427780.718511,
-    "seen": 1792427792.2734065,
-    "ast_hash": "599dde5b45b38249a2d7f660bdba1384",
+    "mtime": 1792431569.7192504,
+    "seen": 1792431573.2224762,
+    "ast_hash": "8683caf25ca3a76858db4cdae440cfa3",
     "semantic_hash": ""
   },
   "projetos/_biblioteca/figurinhas/_catalogo.jpg": {
@@ -261,6 +261,12 @@
     "mtime": 1792424622.4560702,
     "seen": 1792427568.4194152,
     "ast_hash": "1e60aec8d5ebf0da677feda7e42e901a",
+    "semantic_hash": ""
+  },
+  "tools/recortar_figurinha.py": {
+    "mtime": 1792431122.5007408,
+    "seen": 1792431573.2224452,
+    "ast_hash": "a8b4fa31dc92fe7e87555bf2f05913ab",
     "semantic_hash": ""
   }
 }

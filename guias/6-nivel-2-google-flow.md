@@ -107,6 +107,10 @@ Você gera, baixa e salva com o nome indicado. Depois avise o Claude. Ele confer
 
 **Modo automático:** o Claude segue a skill do Claude in Chrome. Ele abre o Flow numa aba nova, cria um projeto com o nome do vídeo, configura modelo, proporção, duração e "saídas = 1", cola o prompt e gera. Depois espera terminar e confere o resultado pelo próprio Flow. Por fim, baixa com o seu "sim" e move para `flow/`. A cada geração, ele anota no `plano.md` os créditos realmente gastos.
 
+**Interface com agente (outubro de 2026).** O projeto do Flow agora abre com um assistente em chat à direita. O modelo, a proporção e o número de saídas ficam em **Configurações do agente** (ícone de ajustes ao lado do campo de texto): escolha, por exemplo, Nano Banana Pro, 1:1, x1, e clique em **Salvar**. Em "Confirmar antes de gerar", mantenha **Sempre**. Um único pedido pode gerar várias imagens separadas ("generate 6 separate images..."). Para baixar, clique com o botão direito na imagem e escolha **Fazer o download → 1K (tamanho original)**; 2K e 4K são versões aprimoradas.
+
+**Figurinhas e ícones transparentes:** o Flow não entrega PNG transparente. Gere com contorno branco sobre fundo cinza liso e recorte localmente com `python tools/recortar_figurinha.py entrada.jpg saida.png`. Ele aproveita o fundo liso e o contorno branco para fazer a borda suave, sem serrilhado e sem comer o contorno. Removedores genéricos como o `rembg` deixaram a borda serrilhada e apagaram parte do contorno em formas com vãos (como três estrelas juntas). Confira as bordas sobre fundo claro e escuro. As figurinhas genéricas vão para a [biblioteca comum](../projetos/_biblioteca/figurinhas/LEIA-ME.md).
+
 ### 4. Montar no Remotion
 Igual ao Nível 1, usando os arquivos de `flow/` como B-roll e ilustração:
 - **Os vídeos gerados entram sempre sem som** (`muted`): o Veo e o Omni geram áudio, e o áudio original do seu vídeo aparece uma única vez;
