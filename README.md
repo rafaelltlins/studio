@@ -95,7 +95,8 @@ E a [galeria de estilos](estilos/README.md) para escolher o visual.
 
 ## Créditos e licenças
 
-- Código e guias deste repositório: [MIT](LICENSE).
+- Fork de [mackswendhell/studio](https://github.com/mackswendhell/studio), de Macks Wendhell. Este fork acrescenta o Nível 2 · Google (Flow), o registro automático dos vídeos (`src/videos/` fora do Git) e o grafo de conhecimento com [Graphify](https://github.com/Graphify-Labs/graphify), mais a skill `/graphify-setup`.
+- Código e guias deste repositório: [MIT](LICENSE), © 2026 Macks Wendhell e © 2026 Rafaell Lins. Pode usar, modificar e distribuir, inclusive comercialmente, mantendo o aviso de licença.
 - As imagens em `estilos/imagens/` que vêm de vídeos do canal **Macks Wendhell | Inteligência Aplicada** são referência visual; não as reutilize como material próprio.
 - [Remotion](https://www.remotion.dev): gratuito para pessoas físicas, organizações sem fins lucrativos e empresas com até 3 pessoas; empresas maiores precisam de [licença](https://www.remotion.dev/license).
 - Skill [watch](https://github.com/bradautomates/claude-video), de bradautomates (MIT).
