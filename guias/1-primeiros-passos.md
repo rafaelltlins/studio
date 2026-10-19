@@ -142,8 +142,8 @@ studio/
 │  └─ 001. meu-video/
 │
 ├─ src/                código do Remotion (Nível 1)
-│  ├─ Root.tsx         lista de vídeos registrados
-│  ├─ videos/          uma subpasta por vídeo seu
+│  ├─ Root.tsx         encontra sozinho os vídeos registrados
+│  ├─ videos/          uma subpasta por vídeo seu, com registro.tsx (fica fora do Git)
 │  ├─ estilos/         código dos exemplos da galeria
 │  └─ _shared/         peças reaproveitadas
 ├─ tools/              transcrição local e gerador da Higgsfield Cloud API

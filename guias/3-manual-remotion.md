@@ -102,8 +102,8 @@ Tudo abaixo é possível no Nível 1, sem nenhum custo. Peça com as suas palavr
 
 | Arquivo | Para que serve |
 |---|---|
-| `src/Root.tsx` | a "lista de vídeos": cada composição registrada aqui aparece no Studio |
-| `src/videos/<nome>/` | o código de cada um dos seus vídeos |
+| `src/Root.tsx` | a "lista de vídeos": junta os exemplos da galeria e encontra sozinho o `registro.tsx` de cada vídeo seu |
+| `src/videos/<nome>/` | o código de cada um dos seus vídeos, com o `registro.tsx` que o faz aparecer no Studio (fica fora do Git) |
 | `src/estilos/` | os exemplos da galeria, prontos para estudar e copiar |
 | `src/_shared/` | peças técnicas reaproveitadas (como a tela dividida sincronizada) |
 | `projetos/` | seus vídeos e prints (a pasta pública do Remotion) |

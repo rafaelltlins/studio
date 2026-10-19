@@ -67,7 +67,7 @@ Veja um plano real em [projetos/000. exemplo/plano.md](../projetos/000.%20exempl
 
 ### 4. Programar as cenas
 
-- O código do vídeo fica em `src/videos/<slug>/` e é registrado em `src/Root.tsx` dentro de um `<Folder>`.
+- O código do vídeo fica em `src/videos/<slug>/`, com um `registro.tsx` que exporta (default) o `<Folder name="NNN-slug">` com as `<Composition>`. O `src/Root.tsx` encontra esse arquivo sozinho; não o edite. Modelo em `src/videos/LEIA-ME.md`. A pasta `src/videos/` fica fora do Git.
 - Os arquivos de `projetos/` são acessados com `staticFile('<NNN. nome>/...')` (a pasta `projetos` é a pasta pública do Remotion).
 - **Vídeo completo:** uma única instância contínua de `<Video>` com o master; a câmera muda de tamanho e lugar animando o contêiner, nunca reiniciando o vídeo. Dimensões e fps herdados do master.
 - **Tela dividida:** use sempre `src/_shared/synchronized-split.tsx`. Ele garante que câmera e painel entrem e saiam juntos. O `npm run typecheck` bloqueia splits feitos à mão.

@@ -10,6 +10,9 @@ projetos/*
 !projetos/000. exemplo/
 projetos/000. exemplo/**/*.mp4
 projetos/000. exemplo/**/*.mov
+# código dos seus vídeos (cada um com o seu registro.tsx, carregado sozinho pelo Root.tsx)
+src/videos/*
+!src/videos/LEIA-ME.md
 .claude/skills/
 .claude/settings.local.json
 skills-lock.json

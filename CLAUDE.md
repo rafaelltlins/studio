@@ -79,8 +79,8 @@ guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remoti
 estilos/                  galeria de estilos (README.md + imagens/)
 projetos/<NNN. slug>/     video/ · prints/ · frames/ · transcricao/ · hf/ · flow/ · plano.md · edit.jsx
 edicoes/<NNN. slug>/      somente entregáveis finais
-src/Root.tsx              registro das composições do Remotion
-src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B)
+src/Root.tsx              estilos da galeria + carrega sozinho os registro.tsx de src/videos/ (não editar por vídeo)
+src/videos/<slug>/        código de cada vídeo + registro.tsx (Nível 1, Nível 2 · Higgsfield caminho B e Nível 2 · Google); fora do Git
 src/estilos/              exemplos da galeria, rodam sem vídeo
 src/_shared/              primitivas: synchronized-split.tsx (obrigatória em telas divididas), metadata.ts
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
@@ -88,5 +88,6 @@ tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho
 ```
 
 - Numeração: `NNN. slug`, três dígitos, igual em `projetos/` e `edicoes/`. Novo projeto = maior número + 1. O prefixo numérico não entra no slug de `src/videos/` nem nos ids de composição.
+- Registro de um vídeo: crie `src/videos/<slug>/registro.tsx` com `export default` de um componente que devolve `<Folder name="NNN-slug">` com as `<Composition>` (modelo em `src/videos/LEIA-ME.md`). **Não edite o `src/Root.tsx`** para isso, mesmo que a skill de Remotion sugira: ele encontra os registros sozinho, e `src/videos/*` fica fora do Git para que os vídeos de cada pessoa não sejam publicados.
 - `projetos/` é a pasta pública do Remotion: `staticFile('<NNN. slug>/video/arquivo.mp4')`.
 - Comandos: `npm run studio`, `npm run typecheck`, `npm run compositions`.
