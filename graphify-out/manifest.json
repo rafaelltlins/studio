@@ -6,10 +6,10 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791522786.4342027,
-    "seen": 1792387046.719936,
-    "ast_hash": "6dbaf3458878d251e16987a92792e3a4",
-    "semantic_hash": "6dbaf3458878d251e16987a92792e3a4"
+    "mtime": 1792431925.0776901,
+    "seen": 1792431990.543307,
+    "ast_hash": "bafb9d1411b40ef2fcaad6ef9ba512cf",
+    "semantic_hash": ""
   },
   "remotion.config.ts": {
     "mtime": 1792431541.6460583,
@@ -24,9 +24,9 @@
     "semantic_hash": "7f4579021f82fa247db5044eb1f59dff"
   },
   "scripts/instalar.mjs": {
-    "mtime": 1792431585.5360632,
-    "seen": 1792431589.385312,
-    "ast_hash": "31ad117be239b5ecfc286ed879e00bce",
+    "mtime": 1792431948.147164,
+    "seen": 1792431990.5433147,
+    "ast_hash": "3bffc28146355da4ee9f11baf87c1f0b",
     "semantic_hash": ""
   },
   "src/Root.tsx": {
@@ -96,10 +96,10 @@
     "semantic_hash": "9b32fdd1e43c133398666f969b5ccc8a"
   },
   "tools/transcrever.py": {
-    "mtime": 1792393604.1058526,
-    "seen": 1792393607.1387203,
-    "ast_hash": "41b90236dde1a44dc71b6ec7ecd68d19",
-    "semantic_hash": "41b90236dde1a44dc71b6ec7ecd68d19"
+    "mtime": 1792431941.8266163,
+    "seen": 1792431990.543342,
+    "ast_hash": "36d22cb9a5927b1818e091588bbc9707",
+    "semantic_hash": ""
   },
   "tsconfig.json": {
     "mtime": 1791522786.4414296,
@@ -108,9 +108,9 @@
     "semantic_hash": "97d01e335f1ab7a4a5e053c626a68b57"
   },
   "CLAUDE.md": {
-    "mtime": 1792431569.7192504,
-    "seen": 1792431573.2224557,
-    "ast_hash": "ae1d68b870bcabfd318fc1cc357b3111",
+    "mtime": 1792431973.9957626,
+    "seen": 1792431990.5433514,
+    "ast_hash": "1a8a7f32967ee25d3451e3ee293afed0",
     "semantic_hash": ""
   },
   "README.md": {
@@ -126,15 +126,15 @@
     "semantic_hash": "0f9c7ba5c0c531fdeba95e9b4ada71d9"
   },
   "guias/1-primeiros-passos.md": {
-    "mtime": 1792431569.7137723,
-    "seen": 1792431573.2224607,
-    "ast_hash": "676f9b0bee550a02cdc061e6642d7cd1",
+    "mtime": 1792431973.9957626,
+    "seen": 1792431990.5433567,
+    "ast_hash": "e90a0e99029638d75ccda4ff2bd3a4e9",
     "semantic_hash": ""
   },
   "guias/2-nivel-1-remotion.md": {
-    "mtime": 1792430689.6466987,
-    "seen": 1792430697.1974792,
-    "ast_hash": "f1b4bc091b99b17c757c80664a687945",
+    "mtime": 1792431973.9957626,
+    "seen": 1792431990.5433583,
+    "ast_hash": "33d3af4eaaf06e30974b53a36efea03b",
     "semantic_hash": ""
   },
   "guias/3-manual-remotion.md": {
@@ -267,6 +267,12 @@
     "mtime": 1792431122.5007408,
     "seen": 1792431573.2224452,
     "ast_hash": "a8b4fa31dc92fe7e87555bf2f05913ab",
+    "semantic_hash": ""
+  },
+  "scripts/verificar-gpu.mjs": {
+    "mtime": 1792431955.1830394,
+    "seen": 1792431990.5433164,
+    "ast_hash": "1a41569085b415c696bcbbb37a80e90e",
     "semantic_hash": ""
   }
 }

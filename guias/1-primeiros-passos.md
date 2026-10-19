@@ -113,17 +113,25 @@ Sem essa chave tudo funciona igual: o `tools/transcrever.py` transcreve localmen
 
 ## 5b. (Opcional) Placa de vídeo Nvidia
 
-Sem placa de vídeo, tudo funciona pela CPU. Com uma Nvidia, algumas etapas ficam mais rápidas:
+Sem placa de vídeo, tudo funciona pela CPU. Com uma Nvidia, algumas etapas ficam mais rápidas. Para ver o que a sua máquina consegue, rode:
+
+```bash
+npm run gpu
+```
 
 | etapa | usa a GPU? | o que precisa |
 |---|---|---|
 | desenhar os quadros no Remotion | sim, já ligado (`remotion.config.ts`, modo `angle`) | qualquer driver |
-| ler vídeo de celular (HEVC) com o ffmpeg | sim, com `-hwaccel d3d11va` | qualquer driver |
-| converter vídeo com o encoder da placa (NVENC, `h264_nvenc`) | sim | **driver 552 ou mais novo** |
-| transcrever com o Whisper (`tools/transcrever.py`) | sim, tenta a GPU primeiro e cai na CPU se não der | **driver 552 ou mais novo** + `pip install nvidia-cublas-cu12 nvidia-cudnn-cu12` |
+| converter vídeo com o encoder da placa (NVENC) | sim, o Claude usa sozinho quando funciona | **driver 570 ou mais novo** |
+| transcrever com o Whisper (`tools/transcrever.py`) | sim: tenta a GPU primeiro e cai na CPU se não der | **driver 570 ou mais novo** + bibliotecas de CUDA (o `npm run instalar` instala sozinho quando o driver é novo) |
 | codificar o MP4 final do Remotion | não (no Windows, o Remotion codifica pela CPU) | — |
 
-Para ver a versão do driver: `nvidia-smi`. Para atualizar: baixe o **NVIDIA Studio Driver** (ou Game Ready) no site da Nvidia ou pelo app NVIDIA, e reinicie o computador. Com driver antigo, o ffmpeg mostra `Cannot load cuMemAllocAsync` e o Whisper usa a CPU.
+**Driver antigo?** O `npm run gpu` avisa. O Studio **não instala driver**: isso é com você.
+
+1. Abra [nvidia.com/pt-br/drivers](https://www.nvidia.com/pt-br/drivers/), escolha a sua placa (ex.: GeForce › GeForce 16 Series › GeForce GTX 1660 Ti › Windows 11) e baixe o **NVIDIA Studio Driver** (mais estável para vídeo). O Game Ready também serve. Outro caminho é o **app NVIDIA**, que avisa e instala as atualizações.
+2. Instale com a opção **Instalação expressa** e reinicie o computador.
+3. Rode `npm run instalar` de novo: ele detecta o driver novo e instala as bibliotecas de CUDA da transcrição.
+4. Confira com `npm run gpu`: NVENC "funciona" e transcrição "pronta".
 
 ## 6. (Só para o Nível 2) Conectar a Higgsfield, o Google Flow ou o Meta AI
 

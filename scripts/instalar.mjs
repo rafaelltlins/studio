@@ -2,6 +2,7 @@
 // Uso: npm run instalar   (ou: node scripts/instalar.mjs)
 // Cada passo é independente: se um falhar, os outros continuam e o resumo final diz o que resolver.
 import {spawnSync} from 'node:child_process';
+import {resumo, verificarGpu} from './verificar-gpu.mjs';
 
 const python = process.platform === 'win32' ? 'python' : 'python3';
 
@@ -21,6 +22,17 @@ for (const [nome, comando, opcional] of passos) {
   const r = spawnSync(comando, {stdio: 'inherit', shell: true});
   if (r.status !== 0 && !opcional) falhas.push(nome);
 }
+
+// Placa Nvidia (opcional): com driver novo, instala as bibliotecas de CUDA da transcrição; com driver
+// antigo, só avisa. O driver em si nunca é instalado por aqui: isso é com a pessoa (guia 1, seção 5b).
+console.log('\n==> Placa de vídeo (opcional)');
+let gpu = verificarGpu();
+if (gpu.nvidia && gpu.driverOk && !gpu.bibliotecasCuda) {
+  const cmd = `${python} -m pip install nvidia-cublas-cu12 nvidia-cudnn-cu12`;
+  console.log(`    ${cmd}`);
+  if (spawnSync(cmd, {stdio: 'inherit', shell: true}).status === 0) gpu = verificarGpu();
+}
+for (const linha of resumo(gpu)) console.log(`    ${linha}`);
 
 for (const programa of ['ffmpeg -version', 'ffprobe -version']) {
   if (spawnSync(programa, {stdio: 'ignore', shell: true}).status !== 0) falhas.push(`${programa.split(' ')[0]} (instale pelo guia)`);

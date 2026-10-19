@@ -37,6 +37,7 @@ Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pe
    - Nível 2: as ferramentas da Higgsfield respondem (chame `balance`). Se não houver conector, explique os dois caminhos de conexão do guia (A: entrar com a conta, recomendado; B: API key da Higgsfield Cloud via `tools/hf_api.py`, sem Higgsedit). No caminho B, confirme que a variável `HF_KEY` (ou `HF_API_KEY` + `HF_API_SECRET`) existe, **sem imprimir o valor**;
    - Nível 2 · Google, modo automático: as ferramentas do Claude in Chrome respondem e há um navegador conectado. Se não, ensine a preparar conforme a seção 1 do guia 6, ou ofereça o modo manual. No modo manual não há pré-requisito além da conta Google com plano AI Pro/Ultra;
    - Nível 2 · Meta AI, modo automático: o mesmo do Flow automático (Claude in Chrome conectado), com a conta Meta logada no meta.ai; detalhes na seção 1 do guia 8. No modo manual basta a conta Meta;
+   - Placa de vídeo: rode `npm run gpu -- --json`. Com `nvenc: true`, use o encoder da placa nas conversões do ffmpeg (ex.: cópia H.264 do vídeo de celular com `-c:v h264_nvenc -preset p5 -cq 16`); senão, `libx264`. Com `driverOk: false`, avise **uma vez**, em uma frase, que atualizar o driver da Nvidia (link no resumo, guia 1 seção 5b) acelera a transcrição e as conversões; nunca instale driver pela pessoa. Sem Nvidia, não diga nada;
    - Skill `watch`: rode sempre com `--engine local`, a menos que a pessoa peça outra coisa. Se existir `GEMINI_API_KEY` no ambiente, o modo automático da `watch` **envia o vídeo para o Google**.
 
 4. Liste os projetos em `projetos/` e pergunte qual editar. Se não houver nenhum, ensine a criar: `projetos/001. nome/video/` com o vídeo e `prints/` com as imagens.
@@ -101,7 +102,7 @@ tools/recortar_figurinha.py  recorte de figurinha (contorno branco sobre fundo l
 - **Biblioteca comum** (`projetos/_biblioteca/`): antes de gerar um ícone ou destaque, veja se ele já existe lá. Uma figurinha nova que for genérica (sem produto, marca, pessoa ou texto) vai para a biblioteca, anotada em `LOCAL.md` da pasta; o que for de um vídeo só fica no projeto. Do Git, só sobem os `LEIA-ME.md` (a ideia) e o pacote inicial de 5 figurinhas; tudo o que cada pessoa acrescenta fica local (`.gitignore`). Não altere o catálogo do pacote inicial.
 - Registro de um vídeo: crie `src/videos/<slug>/registro.tsx` com `export default` de um componente que devolve `<Folder name="NNN-slug">` com as `<Composition>` (modelo em `src/videos/LEIA-ME.md`). **Não edite o `src/Root.tsx`** para isso, mesmo que a skill de Remotion sugira: ele encontra os registros sozinho, e `src/videos/*` fica fora do Git para que os vídeos de cada pessoa não sejam publicados.
 - `projetos/` é a pasta pública do Remotion: `staticFile('<NNN. slug>/video/arquivo.mp4')`.
-- Comandos: `npm run studio`, `npm run typecheck`, `npm run compositions`.
+- Comandos: `npm run studio`, `npm run typecheck`, `npm run compositions`, `npm run gpu`.
 
 ## graphify
 

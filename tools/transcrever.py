@@ -9,12 +9,28 @@ Tenta a placa de vídeo (CUDA) e, se não houver, usa o processador sozinho.
 """
 
 import json
+import os
+import site
 import subprocess
 import sys
 from pathlib import Path
 
 import numpy as np
-from faster_whisper import WhisperModel
+
+
+def _dlls_cuda():
+    # No Windows, as DLLs de CUDA instaladas pelo pip (nvidia-cublas-cu12, nvidia-cudnn-cu12) ficam em
+    # site-packages/nvidia/*/bin, fora do PATH: sem isto, a transcrição nunca usaria a placa de vídeo.
+    if os.name != "nt":
+        return
+    for base in site.getsitepackages() + [site.getusersitepackages()]:
+        for pasta in Path(base, "nvidia").glob("*/bin"):
+            os.add_dll_directory(str(pasta))
+            os.environ["PATH"] = str(pasta) + os.pathsep + os.environ.get("PATH", "")
+
+
+_dlls_cuda()
+from faster_whisper import WhisperModel  # noqa: E402  (depois das DLLs de CUDA)
 
 MODELO = "large-v3-turbo"
 DISPOSITIVOS = [("cuda", "float16"), ("cpu", "int8")]
