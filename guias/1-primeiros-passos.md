@@ -126,6 +126,14 @@ npm run gpu
 | transcrever com o Whisper (`tools/transcrever.py`) | sim: tenta a GPU primeiro e cai na CPU se não der | **driver 570 ou mais novo** + bibliotecas de CUDA (o `npm run instalar` instala sozinho quando o driver é novo) |
 | codificar o MP4 final do Remotion | não (no Windows, o Remotion codifica pela CPU) | — |
 
+Ganho medido numa GTX 1660 Ti (driver 617) com um vídeo de celular de 55 s (projeto real, outubro de 2026):
+
+| etapa | só CPU | com a GPU | ganho |
+|---|---|---|---|
+| render no Remotion (240 quadros) | 109 s | 33 s | **3,3×** |
+| cópia H.264 do vídeo HEVC do celular | 70 s | 7,5 s | **9×** (mesma qualidade, arquivo 40% menor) |
+| transcrição com o Whisper (large-v3-turbo) | 26 s | 13 s | **2×** (mesmo texto) |
+
 **Driver antigo?** O `npm run gpu` avisa. O Studio **não instala driver**: isso é com você.
 
 1. Abra [nvidia.com/pt-br/drivers](https://www.nvidia.com/pt-br/drivers/), escolha a sua placa (ex.: GeForce › GeForce 16 Series › GeForce GTX 1660 Ti › Windows 11) e baixe o **NVIDIA Studio Driver** (mais estável para vídeo). O Game Ready também serve. Outro caminho é o **app NVIDIA**, que avisa e instala as atualizações.

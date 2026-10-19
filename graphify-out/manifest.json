@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "remotion.config.ts": {
-    "mtime": 1792431541.6460583,
-    "seen": 1792431573.2224174,
-    "ast_hash": "411e5aa2534db1f00da5bc9c1c09797a",
+    "mtime": 1792440761.6679778,
+    "seen": 1792440768.4876924,
+    "ast_hash": "ba80c50f28ece0b794ce4a028ed2cee1",
     "semantic_hash": ""
   },
   "scripts/check-split-layouts.mjs": {
@@ -126,9 +126,9 @@
     "semantic_hash": "0f9c7ba5c0c531fdeba95e9b4ada71d9"
   },
   "guias/1-primeiros-passos.md": {
-    "mtime": 1792431973.9957626,
-    "seen": 1792431990.5433567,
-    "ast_hash": "e90a0e99029638d75ccda4ff2bd3a4e9",
+    "mtime": 1792440761.6832218,
+    "seen": 1792440768.487744,
+    "ast_hash": "7a89c8fd01ef1635050b6747947380a9",
     "semantic_hash": ""
   },
   "guias/2-nivel-1-remotion.md": {
