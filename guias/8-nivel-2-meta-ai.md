@@ -46,7 +46,7 @@ Regras do modo automático:
 
 ## O que se aprendeu no 1º teste (projeto 001, outubro de 2026)
 
-- **Figurinhas transparentes saem prontas.** Pedindo "glossy 3D icon sticker ..., thick white die-cut outline, transparent background, 1:1, no text", o Meta AI gera sobre magenta e entrega um **PNG 1600×1600 com transparência real**. Basta limpar um eventual resto de magenta nas bordas. Ótimo para destaques em overlay (ícones, selos, objetos) animados no Remotion. O `rembg` (`pip install rembg pillow`) fica só como reserva para imagens que vierem com fundo.
+- **Figurinhas transparentes saem prontas.** Pedindo "glossy 3D icon sticker ..., thick white die-cut outline, transparent background, 1:1, no text", o Meta AI gera sobre magenta e entrega um **PNG 1600×1600 com transparência real**. Basta limpar um eventual resto de magenta nas bordas. Ótimo para destaques em overlay (ícones, selos, objetos) animados no Remotion. As genéricas vão para a [biblioteca comum](../projetos/_biblioteca/figurinhas/LEIA-ME.md), para servir a qualquer vídeo; veja lá primeiro se a figurinha já existe. O `rembg` (`pip install rembg pillow`) fica só como reserva para imagens que vierem com fundo.
 - **Vídeo depende da conta.** Na conta testada, o site respondeu "Video generation isn't available to you", tanto pelo chat quanto pela Mídia e pelo Vibes. Antes de planejar vídeos, peça um teste rápido; se não houver, use o plano B (imagem com zoom lento e deriva de câmera no Remotion).
 - **Comparação A/B.** Às vezes o site mostra duas respostas ("Qual resposta você prefere?"); as duas contam como geração. Escolha uma antes de seguir.
 - **Moderação.** Cenas de criança perto de algo perigoso podem ser recusadas no pedido de vídeo; a imagem passou.

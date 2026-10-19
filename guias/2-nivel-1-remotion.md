@@ -71,6 +71,7 @@ Veja um plano real em [projetos/000. exemplo/plano.md](../projetos/000.%20exempl
 - Os arquivos de `projetos/` são acessados com `staticFile('<NNN. nome>/...')` (a pasta `projetos` é a pasta pública do Remotion).
 - **Vídeo completo:** uma única instância contínua de `<Video>` com o master; a câmera muda de tamanho e lugar animando o contêiner, nunca reiniciando o vídeo. Dimensões e fps herdados do master.
 - **Tela dividida:** use sempre `src/_shared/synchronized-split.tsx`. Ele garante que câmera e painel entrem e saiam juntos. O `npm run typecheck` bloqueia splits feitos à mão.
+- **Figurinhas 3D:** a [biblioteca comum](../projetos/_biblioteca/figurinhas/LEIA-ME.md) tem ícones em PNG transparente (alerta, cadeado, carrinho, coração...) para destaques em overlay, sem custo. Use `src/_shared/figurinha.tsx`, na palavra-gatilho.
 - Toda animação depende de `useCurrentFrame()`. Nada de transições ou animações CSS.
 - Tempos definidos em segundos (vindos do `palavras.json`) e convertidos com o fps.
 - `<Sequence premountFor={fps}>` em toda cena com tempo definido.

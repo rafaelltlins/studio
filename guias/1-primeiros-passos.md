@@ -149,7 +149,7 @@ studio/
 │  ├─ Root.tsx         encontra sozinho os vídeos registrados
 │  ├─ videos/          uma subpasta por vídeo seu, com registro.tsx (fica fora do Git)
 │  ├─ estilos/         código dos exemplos da galeria
-│  └─ _shared/         peças reaproveitadas
+│  └─ _shared/         peças reaproveitadas (ex.: figurinha.tsx)
 ├─ tools/              transcrição local e gerador da Higgsfield Cloud API
 └─ scripts/            verificações automáticas
 ```

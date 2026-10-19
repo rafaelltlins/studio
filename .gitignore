@@ -7,6 +7,7 @@ edicoes/*
 !edicoes/.gitkeep
 projetos/*
 !projetos/LEIA-ME.md
+!projetos/_biblioteca/
 !projetos/000. exemplo/
 projetos/000. exemplo/**/*.mp4
 projetos/000. exemplo/**/*.mov

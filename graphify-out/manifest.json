@@ -108,9 +108,9 @@
     "semantic_hash": "97d01e335f1ab7a4a5e053c626a68b57"
   },
   "CLAUDE.md": {
-    "mtime": 1792423683.7472432,
-    "seen": 1792423701.0323608,
-    "ast_hash": "465dd64b9f581cf6b21af7aa108c3faf",
+    "mtime": 1792427545.7198195,
+    "seen": 1792427568.4193244,
+    "ast_hash": "44f3e58dacf7c34635d972a9d1466b25",
     "semantic_hash": ""
   },
   "README.md": {
@@ -126,15 +126,15 @@
     "semantic_hash": "0f9c7ba5c0c531fdeba95e9b4ada71d9"
   },
   "guias/1-primeiros-passos.md": {
-    "mtime": 1792423683.7472432,
-    "seen": 1792423701.0323663,
-    "ast_hash": "dc2da96a02118555cc9c5189b8217d3e",
+    "mtime": 1792427545.735608,
+    "seen": 1792427568.4193377,
+    "ast_hash": "7c476afd18e4a343be67bb40982cbffe",
     "semantic_hash": ""
   },
   "guias/2-nivel-1-remotion.md": {
-    "mtime": 1792393604.102476,
-    "seen": 1792393607.138735,
-    "ast_hash": "6fcdd38ea9b8a9164312f6863cd75b89",
+    "mtime": 1792427545.7359438,
+    "seen": 1792427568.4193413,
+    "ast_hash": "21eb0fe9e3b057d58a8cddc12c3d4818",
     "semantic_hash": ""
   },
   "guias/3-manual-remotion.md": {
@@ -168,10 +168,10 @@
     "semantic_hash": "ddd44015532a3e563ea9dcf17ba3eb66"
   },
   "projetos/LEIA-ME.md": {
-    "mtime": 1791522786.4342027,
-    "seen": 1792387046.7199767,
-    "ast_hash": "77d8b7f4d16411001083a2fd6edff566",
-    "semantic_hash": "77d8b7f4d16411001083a2fd6edff566"
+    "mtime": 1792427545.7351108,
+    "seen": 1792427568.4193804,
+    "ast_hash": "630bff5f4dbddc1904a50a2f2798da48",
+    "semantic_hash": ""
   },
   "guias/7-graphify-e-obsidian.md": {
     "mtime": 1792393604.102476,
@@ -210,9 +210,57 @@
     "semantic_hash": ""
   },
   "guias/8-nivel-2-meta-ai.md": {
-    "mtime": 1792426569.946808,
-    "seen": 1792426573.2626863,
-    "ast_hash": "1de1e575d3fc49955350b05c223db2fb",
+    "mtime": 1792427545.7369807,
+    "seen": 1792427568.419371,
+    "ast_hash": "837a186691178b7630be216e6f9e9675",
+    "semantic_hash": ""
+  },
+  "src/_shared/figurinha.tsx": {
+    "mtime": 1792427497.7206845,
+    "seen": 1792427568.4192457,
+    "ast_hash": "787153f280d197e56e220af53ef60b32",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/LEIA-ME.md": {
+    "mtime": 1792427497.670604,
+    "seen": 1792427568.419384,
+    "ast_hash": "f1a959c71d64ca8d00e14395ebf2649d",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/_catalogo.jpg": {
+    "mtime": 1792427497.4594786,
+    "seen": 1792427568.4193926,
+    "ast_hash": "e9bb33451959359d92f27b3d53d70562",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/alerta.png": {
+    "mtime": 1792424572.4999561,
+    "seen": 1792427568.4193966,
+    "ast_hash": "3a91332881b67372af654e18b685db19",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/cadeado.png": {
+    "mtime": 1792424623.4048617,
+    "seen": 1792427568.4194002,
+    "ast_hash": "43665fd00f88383cde2fb901c82b6b5f",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/carrinho.png": {
+    "mtime": 1792424578.6791418,
+    "seen": 1792427568.4194043,
+    "ast_hash": "aa96d75b07286794413a6c002702dbd2",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/coracao.png": {
+    "mtime": 1792424569.8230317,
+    "seen": 1792427568.4194076,
+    "ast_hash": "296156da5317005e7731d1ef0ea963e8",
+    "semantic_hash": ""
+  },
+  "projetos/_biblioteca/figurinhas/furadeira-proibida.png": {
+    "mtime": 1792424622.4560702,
+    "seen": 1792427568.4194152,
+    "ast_hash": "1e60aec8d5ebf0da677feda7e42e901a",
     "semantic_hash": ""
   }
 }
