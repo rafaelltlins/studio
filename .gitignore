@@ -13,6 +13,8 @@ projetos/000. exemplo/**/*.mov
 # código dos seus vídeos (cada um com o seu registro.tsx, carregado sozinho pelo Root.tsx)
 src/videos/*
 !src/videos/LEIA-ME.md
-.claude/skills/
+# skills instaladas pelo `npm run instalar` ficam fora; a graphify-setup é da equipe e vai versionada
+.claude/skills/*
+!.claude/skills/graphify-setup/
 .claude/settings.local.json
 skills-lock.json
