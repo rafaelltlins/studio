@@ -89,6 +89,7 @@ A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-pa
 4. [Nível 2 · Higgsfield](guias/4-nivel-2-higgsfield.md): como conectar (conta ou API key), processo, modelos, custos e prompts.
 5. [Direção editorial](guias/5-direcao-editorial.md): o repertório de cenas, transições e cuidados que guia toda edição.
 6. [Nível 2 · Google (Flow)](guias/6-nivel-2-google-flow.md): Flow manual ou automático pelo Claude in Chrome, prévia de custo em créditos, processo e montagem no Remotion.
+7. [Grafo de conhecimento (Graphify) e Obsidian](guias/7-graphify-e-obsidian.md): para quem desenvolve o Studio; o Claude consulta um mapa do projeto em vez de varrer arquivos.
 
 E a [galeria de estilos](estilos/README.md) para escolher o visual.
 
@@ -102,3 +103,4 @@ E a [galeria de estilos](estilos/README.md) para escolher o visual.
 - Transcrição: [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 - Higgsfield: serviço de terceiros, sujeito aos termos e preços da [Higgsfield](https://higgsfield.ai).
 - Google Flow: serviço do Google, sujeito aos termos e aos créditos do seu plano [Google AI](https://one.google.com/about/google-ai-plans/).
+- [Graphify](https://github.com/Graphify-Labs/graphify) e [Obsidian](https://obsidian.md): ferramentas de terceiros, com licenças próprias, usadas para o grafo de conhecimento (veja [guias/7-graphify-e-obsidian.md](guias/7-graphify-e-obsidian.md)).

@@ -18,3 +18,16 @@ src/videos/*
 !.claude/skills/graphify-setup/
 .claude/settings.local.json
 skills-lock.json
+
+# Graphify: versionamos graph.json, GRAPH_REPORT.md, graph.html, manifest.json,
+# .graphify_labels.json e o cache (ast/ e semantic/, que evita releituras pelo LLM).
+# Ficam fora só os arquivos específicos de cada máquina e o vault gerado.
+graphify-out/cost.json
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.graphify_analysis.json
+graphify-out/cache/stat-index.json
+graphify-out/cache/last_query_stamp
+graphify-out/obsidian/
+# cópias de segurança datadas que o `graphify update` cria antes de reescrever o grafo
+graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/

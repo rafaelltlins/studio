@@ -1,2 +1,3 @@
 * text=auto
 *.jpg binary
+graphify-out/graph.json merge=graphify

@@ -1,0 +1,4 @@
+# Arquivos que o Graphify não deve indexar (mesma sintaxe do .gitignore).
+# As miniaturas da galeria já estão descritas em estilos/README.md;
+# indexá-las exigiria uma leitura por visão (LLM) para cada imagem.
+estilos/imagens/
