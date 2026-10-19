@@ -86,7 +86,7 @@ CLAUDE.md                 este arquivo
 guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · Higgsfield · 5 direção editorial · 6 nível 2 · Google (Flow) · 7 Graphify e Obsidian (para quem desenvolve) · 8 nível 2 · Meta AI
 estilos/                  galeria de estilos (README.md + imagens/)
 projetos/<NNN. slug>/     video/ · prints/ · frames/ · transcricao/ · hf/ · flow/ · meta/ · plano.md · edit.jsx
-projetos/_biblioteca/     assets genéricos para qualquer vídeo (figurinhas/ com catálogo no LEIA-ME); versionada
+projetos/_biblioteca/     assets genéricos para qualquer vídeo (figurinhas/); no Git só os LEIA-ME e o pacote inicial
 edicoes/<NNN. slug>/      somente entregáveis finais
 src/Root.tsx              estilos da galeria + carrega sozinho os registro.tsx de src/videos/ (não editar por vídeo)
 src/videos/<slug>/        código de cada vídeo + registro.tsx (Nível 1, Nível 2 · Higgsfield caminho B, Nível 2 · Google e Nível 2 · Meta AI); fora do Git
@@ -97,7 +97,7 @@ tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho
 ```
 
 - Numeração: `NNN. slug`, três dígitos, igual em `projetos/` e `edicoes/`. Novo projeto = maior número + 1. O prefixo numérico não entra no slug de `src/videos/` nem nos ids de composição.
-- **Biblioteca comum** (`projetos/_biblioteca/`): antes de gerar um ícone ou destaque, veja se ele já existe lá. Uma figurinha nova que for genérica (sem produto, marca, pessoa ou texto) vai para a biblioteca, com uma linha no catálogo; o que for de um vídeo só fica no projeto. A biblioteca é a única parte de `projetos/` que vai para o Git, então nada pessoal entra nela.
+- **Biblioteca comum** (`projetos/_biblioteca/`): antes de gerar um ícone ou destaque, veja se ele já existe lá. Uma figurinha nova que for genérica (sem produto, marca, pessoa ou texto) vai para a biblioteca, anotada em `LOCAL.md` da pasta; o que for de um vídeo só fica no projeto. Do Git, só sobem os `LEIA-ME.md` (a ideia) e o pacote inicial de 5 figurinhas; tudo o que cada pessoa acrescenta fica local (`.gitignore`). Não altere o catálogo do pacote inicial.
 - Registro de um vídeo: crie `src/videos/<slug>/registro.tsx` com `export default` de um componente que devolve `<Folder name="NNN-slug">` com as `<Composition>` (modelo em `src/videos/LEIA-ME.md`). **Não edite o `src/Root.tsx`** para isso, mesmo que a skill de Remotion sugira: ele encontra os registros sozinho, e `src/videos/*` fica fora do Git para que os vídeos de cada pessoa não sejam publicados.
 - `projetos/` é a pasta pública do Remotion: `staticFile('<NNN. slug>/video/arquivo.mp4')`.
 - Comandos: `npm run studio`, `npm run typecheck`, `npm run compositions`.

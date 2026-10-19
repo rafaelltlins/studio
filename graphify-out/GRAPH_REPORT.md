@@ -1,7 +1,7 @@
 # Graph Report - VideoStudio  (2026-10-19)
 
 ## Corpus Check
-- 38 files · ~215,952 words
+- 38 files · ~216,070 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 5)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `66a7de9f`
+- Built from commit: `bacc0dd8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -53,10 +53,10 @@
   estilos/README.md → projetos/000. exemplo/plano.md
 - `Dica: tirar prints do que é citado` --semantically_similar_to--> `Estrutura de pasta de projeto (video/ + prints/)`  [INFERRED] [semantically similar]
   README.md → projetos/LEIA-ME.md
-- `Repertório de cenas (CÂMERA, NOTÍCIA/DEMO, AULA 70/30, CENA, B-ROLL)` --conceptually_related_to--> `Direção editorial`  [INFERRED]
-  projetos/000. exemplo/plano.md → guias/5-direcao-editorial.md
 - `Cardápio de opções de edição` --references--> `Galeria de estilos`  [EXTRACTED]
   CLAUDE.md → estilos/README.md
+- `Repertório de cenas (CÂMERA, NOTÍCIA/DEMO, AULA 70/30, CENA, B-ROLL)` --conceptually_related_to--> `Direção editorial`  [INFERRED]
+  projetos/000. exemplo/plano.md → guias/5-direcao-editorial.md
 - `Pontos de aprovação obrigatórios` --conceptually_related_to--> `Plano de edição 003. jev-nao-e-hype`  [INFERRED]
   CLAUDE.md → projetos/000. exemplo/plano.md
 

@@ -2,6 +2,8 @@
 
 Figurinhas 3D **genéricas**, em PNG transparente, para usar como destaque em overlay em qualquer vídeo. Elas valem para todos os níveis: no Nível 1, entram de graça, sem gerar nada.
 
+O repositório traz só um **pacote inicial** (as 5 abaixo), como exemplo da ideia. As figurinhas que você gerar ou copiar para esta pasta ficam **só no seu computador**: o `.gitignore` não as envia ao Git. Monte a sua biblioteca do jeito que quiser.
+
 ![catálogo](_catalogo.jpg)
 
 | arquivo | o que é | quando usar |
@@ -11,6 +13,8 @@ Figurinhas 3D **genéricas**, em PNG transparente, para usar como destaque em ov
 | `carrinho.png` | carrinho de compras laranja | CTA de compra, "clica no carrinho", oferta |
 | `coracao.png` | coração vermelho | "amei", favorito, recomendação pessoal |
 | `furadeira-proibida.png` | furadeira cortada pelo sinal de proibido | "não precisa furar", instalação sem ferramenta |
+
+Esta tabela e o `_catalogo.jpg` descrevem só o pacote inicial. Anote as suas figurinhas em `LOCAL.md`, nesta pasta, que também fica fora do Git.
 
 Estilo comum a todas: ícone 3D brilhante, contorno branco grosso de adesivo, sombra suave, 1600×1600, sem texto.
 
@@ -31,7 +35,7 @@ O componente entra com mola elástica, balança e flutua de leve e sai encolhend
 2. Gere no mesmo estilo. No meta.ai (Nível 2 · Meta AI, [guia 8](../../../guias/8-nivel-2-meta-ai.md)), o PNG já vem transparente:
    > glossy 3D icon sticker of `<objeto>`, thick white die-cut outline, soft drop shadow, vibrant colors, centered, transparent background, 1:1, no text, no letters
 3. Confira a borda: se sobrar magenta ou fundo, limpe antes de salvar.
-4. Use nome curto em português, com hífen (`selo-garantia.png`), e acrescente uma linha na tabela acima.
-5. Refaça o `_catalogo.jpg` (o Claude faz isso).
+4. Use nome curto em português, com hífen (`selo-garantia.png`), e anote em `LOCAL.md` o que é e quando usar.
+5. Não altere a tabela acima nem o `_catalogo.jpg`: eles são do pacote inicial que vai no repositório.
 
-Origem das atuais: geradas no Meta AI em outubro de 2026.
+Origem do pacote inicial: gerado no Meta AI em outubro de 2026.

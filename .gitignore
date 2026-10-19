@@ -8,6 +8,17 @@ edicoes/*
 projetos/*
 !projetos/LEIA-ME.md
 !projetos/_biblioteca/
+# biblioteca: só a ideia (LEIA-ME) e o pacote inicial vão para o Git; as figurinhas
+# que cada pessoa gerar ou copiar para cá ficam locais
+projetos/_biblioteca/**/*
+!projetos/_biblioteca/**/
+!projetos/_biblioteca/**/LEIA-ME.md
+!projetos/_biblioteca/figurinhas/_catalogo.jpg
+!projetos/_biblioteca/figurinhas/alerta.png
+!projetos/_biblioteca/figurinhas/cadeado.png
+!projetos/_biblioteca/figurinhas/carrinho.png
+!projetos/_biblioteca/figurinhas/coracao.png
+!projetos/_biblioteca/figurinhas/furadeira-proibida.png
 !projetos/000. exemplo/
 projetos/000. exemplo/**/*.mp4
 projetos/000. exemplo/**/*.mov
