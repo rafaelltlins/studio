@@ -8,17 +8,17 @@
 
 O arquivo [CLAUDE.md](CLAUDE.md) transforma o Claude num **diretor de vídeo**: ao abrir o projeto, ele pergunta em qual nível você quer editar, confere o que falta instalar, sugere estilos e conduz cada etapa, parando para você aprovar.
 
-## Dois níveis
+## Dois níveis, com duas vertentes no Nível 2
 
-| | **Nível 1: gratuito** | **Nível 2: avançado** |
-|---|---|---|
-| Motor | [Remotion](https://www.remotion.dev) (vídeo feito com código) | [Higgsfield](https://higgsfield.ai) (IA generativa + editor Higgsedit) |
-| O que faz | textos, prints animados, marca-texto, tela dividida, gráficos, legendas, transições | tudo do Nível 1 + imagens e vídeos gerados por IA: B-roll, metáforas, cenas realistas |
-| Custo | zero, roda no seu computador | créditos da sua conta Higgsfield |
-| Melhor para | tutoriais, aulas, análises, notícias, Reels | vídeos que pedem imagem de cinema e ilustração |
-| Guia | [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) | [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) |
+| | **Nível 1: gratuito** | **Nível 2 · Higgsfield** | **Nível 2 · Google (Flow)** |
+|---|---|---|---|
+| Motor | [Remotion](https://www.remotion.dev) (vídeo feito com código) | [Higgsfield](https://higgsfield.ai) (IA generativa + editor Higgsedit) | [Google Flow](https://labs.google/fx/tools/flow) (Veo 3.1, Omni Flash, Nano Banana) + montagem no Remotion |
+| O que faz | textos, prints animados, marca-texto, tela dividida, gráficos, legendas, transições | tudo do Nível 1 + imagens e vídeos gerados por IA: B-roll, metáforas, cenas realistas | tudo do Nível 1 + imagens e vídeos gerados no Flow, em modo manual (ficha de prompts) ou automático (Claude in Chrome) |
+| Custo | zero, roda no seu computador | créditos da sua conta Higgsfield | créditos da assinatura Google AI Pro/Ultra, com prévia de custo antes de gerar |
+| Melhor para | tutoriais, aulas, análises, notícias, Reels | vídeos que pedem imagem de cinema e ilustração | quem já assina o Google AI e quer B-roll sem pagar API |
+| Guia | [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) | [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) | [guias/6-nivel-2-google-flow.md](guias/6-nivel-2-google-flow.md) |
 
-Nos dois níveis o fluxo é o mesmo:
+Em todos os níveis, o fluxo é o mesmo:
 
 ```text
 você grava e corta → salva o vídeo e os prints em projetos/
@@ -62,7 +62,7 @@ Depois de instalar:
 
 1. Coloque seu vídeo em `projetos/001. meu-video/video/` e os prints em `projetos/001. meu-video/prints/`.
 2. Abra a pasta `studio` no Claude (sessão **Code**).
-3. Responda se quer o Nível 1 ou o Nível 2 e diga o que imagina. O diretor cuida do resto.
+3. Responda se quer o Nível 1, o Nível 2 · Higgsfield ou o Nível 2 · Google (Flow) e diga o que imagina. O diretor cuida do resto.
 
 > **Dica que mais faz diferença:** tire print de tudo o que você cita no vídeo (sites, notícias, telas, gráficos) e salve em `prints/`. Animação feita sobre print real fica muito melhor que recriação.
 
@@ -86,8 +86,9 @@ A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-pa
 1. [Primeiros passos](guias/1-primeiros-passos.md): instalação, pastas e primeira edição.
 2. [Nível 1: Remotion](guias/2-nivel-1-remotion.md): o processo gratuito, fase por fase.
 3. [Manual do Remotion para leigos](guias/3-manual-remotion.md): o que é, como funciona e tudo o que dá para pedir.
-4. [Nível 2: Higgsfield](guias/4-nivel-2-higgsfield.md): como conectar (conta ou API key), processo, modelos, custos e prompts.
+4. [Nível 2 · Higgsfield](guias/4-nivel-2-higgsfield.md): como conectar (conta ou API key), processo, modelos, custos e prompts.
 5. [Direção editorial](guias/5-direcao-editorial.md): o repertório de cenas, transições e cuidados que guia toda edição.
+6. [Nível 2 · Google (Flow)](guias/6-nivel-2-google-flow.md): Flow manual ou automático pelo Claude in Chrome, prévia de custo em créditos, processo e montagem no Remotion.
 
 E a [galeria de estilos](estilos/README.md) para escolher o visual.
 
@@ -100,3 +101,4 @@ E a [galeria de estilos](estilos/README.md) para escolher o visual.
 - Skills do Remotion: [remotion-dev/skills](https://github.com/remotion-dev/skills).
 - Transcrição: [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 - Higgsfield: serviço de terceiros, sujeito aos termos e preços da [Higgsfield](https://higgsfield.ai).
+- Google Flow: serviço do Google, sujeito aos termos e aos créditos do seu plano [Google AI](https://one.google.com/about/google-ai-plans/).
