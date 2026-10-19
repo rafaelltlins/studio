@@ -8,15 +8,15 @@
 
 O arquivo [CLAUDE.md](CLAUDE.md) transforma o Claude num **diretor de vídeo**: ao abrir o projeto, ele pergunta em qual nível você quer editar, confere o que falta instalar, sugere estilos e conduz cada etapa, parando para você aprovar.
 
-## Dois níveis, com duas vertentes no Nível 2
+## Dois níveis, com três vertentes no Nível 2
 
-| | **Nível 1: gratuito** | **Nível 2 · Higgsfield** | **Nível 2 · Google (Flow)** |
-|---|---|---|---|
-| Motor | [Remotion](https://www.remotion.dev) (vídeo feito com código) | [Higgsfield](https://higgsfield.ai) (IA generativa + editor Higgsedit) | [Google Flow](https://labs.google/fx/tools/flow) (Veo 3.1, Omni Flash, Nano Banana) + montagem no Remotion |
-| O que faz | textos, prints animados, marca-texto, tela dividida, gráficos, legendas, transições | tudo do Nível 1 + imagens e vídeos gerados por IA: B-roll, metáforas, cenas realistas | tudo do Nível 1 + imagens e vídeos gerados no Flow, em modo manual (ficha de prompts) ou automático (Claude in Chrome) |
-| Custo | zero, roda no seu computador | créditos da sua conta Higgsfield | créditos da assinatura Google AI Pro/Ultra, com prévia de custo antes de gerar |
-| Melhor para | tutoriais, aulas, análises, notícias, Reels | vídeos que pedem imagem de cinema e ilustração | quem já assina o Google AI e quer B-roll sem pagar API |
-| Guia | [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) | [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) | [guias/6-nivel-2-google-flow.md](guias/6-nivel-2-google-flow.md) |
+| | **Nível 1: gratuito** | **Nível 2 · Higgsfield** | **Nível 2 · Google (Flow)** | **Nível 2 · Meta AI** |
+|---|---|---|---|---|
+| Motor | [Remotion](https://www.remotion.dev) (vídeo feito com código) | [Higgsfield](https://higgsfield.ai) (IA generativa + editor Higgsedit) | [Google Flow](https://labs.google/fx/tools/flow) (Veo 3.1, Omni Flash, Nano Banana) + montagem no Remotion | [Meta AI](https://www.meta.ai) (Imagine: imagem e animação) + montagem no Remotion |
+| O que faz | textos, prints animados, marca-texto, tela dividida, gráficos, legendas, transições | tudo do Nível 1 + imagens e vídeos gerados por IA: B-roll, metáforas, cenas realistas | tudo do Nível 1 + imagens e vídeos gerados no Flow, em modo manual (ficha de prompts) ou automático (Claude in Chrome) | tudo do Nível 1 + imagens e vídeos gerados no meta.ai, em modo manual ou automático (Claude in Chrome) |
+| Custo | zero, roda no seu computador | créditos da sua conta Higgsfield | créditos da assinatura Google AI Pro/Ultra, com prévia de custo antes de gerar | zero por enquanto (conta Meta); sem API oficial, limites podem surgir sem aviso, marca d'água nos arquivos |
+| Melhor para | tutoriais, aulas, análises, notícias, Reels | vídeos que pedem imagem de cinema e ilustração | quem já assina o Google AI e quer B-roll sem pagar API | quem quer B-roll gerado sem gastar créditos e aceita os riscos |
+| Guia | [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) | [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) | [guias/6-nivel-2-google-flow.md](guias/6-nivel-2-google-flow.md) | [guias/8-nivel-2-meta-ai.md](guias/8-nivel-2-meta-ai.md) |
 
 Em todos os níveis, o fluxo é o mesmo:
 
@@ -62,7 +62,7 @@ Depois de instalar:
 
 1. Coloque seu vídeo em `projetos/001. meu-video/video/` e os prints em `projetos/001. meu-video/prints/`.
 2. Abra a pasta `studio` no Claude (sessão **Code**).
-3. Responda se quer o Nível 1, o Nível 2 · Higgsfield ou o Nível 2 · Google (Flow) e diga o que imagina. O diretor cuida do resto.
+3. Responda se quer o Nível 1, o Nível 2 · Higgsfield, o Nível 2 · Google (Flow) ou o Nível 2 · Meta AI e diga o que imagina. O diretor cuida do resto.
 
 > **Dica que mais faz diferença:** tire print de tudo o que você cita no vídeo (sites, notícias, telas, gráficos) e salve em `prints/`. Animação feita sobre print real fica muito melhor que recriação.
 
@@ -95,7 +95,7 @@ E a [galeria de estilos](estilos/README.md) para escolher o visual.
 
 ## Créditos e licenças
 
-- Fork de [mackswendhell/studio](https://github.com/mackswendhell/studio), de Macks Wendhell. Este fork acrescenta o Nível 2 · Google (Flow), o registro automático dos vídeos (`src/videos/` fora do Git) e o grafo de conhecimento com [Graphify](https://github.com/Graphify-Labs/graphify), mais a skill `/graphify-setup`.
+- Fork de [mackswendhell/studio](https://github.com/mackswendhell/studio), de Macks Wendhell. Este fork acrescenta o Nível 2 · Google (Flow), o Nível 2 · Meta AI, o registro automático dos vídeos (`src/videos/` fora do Git) e o grafo de conhecimento com [Graphify](https://github.com/Graphify-Labs/graphify), mais a skill `/graphify-setup`.
 - Código e guias deste repositório: [MIT](LICENSE), © 2026 Macks Wendhell e © 2026 Rafaell Lins. Pode usar, modificar e distribuir, inclusive comercialmente, mantendo o aviso de licença.
 - As imagens em `estilos/imagens/` que vêm de vídeos do canal **Macks Wendhell | Inteligência Aplicada** são referência visual; não as reutilize como material próprio.
 - [Remotion](https://www.remotion.dev): gratuito para pessoas físicas, organizações sem fins lucrativos e empresas com até 3 pessoas; empresas maiores precisam de [licença](https://www.remotion.dev/license).
@@ -104,4 +104,5 @@ E a [galeria de estilos](estilos/README.md) para escolher o visual.
 - Transcrição: [faster-whisper](https://github.com/SYSTRAN/faster-whisper).
 - Higgsfield: serviço de terceiros, sujeito aos termos e preços da [Higgsfield](https://higgsfield.ai).
 - Google Flow: serviço do Google, sujeito aos termos e aos créditos do seu plano [Google AI](https://one.google.com/about/google-ai-plans/).
+- Meta AI: serviço da Meta, sujeito aos [termos da Meta AI](https://www.meta.ai); os arquivos gerados saem com marca d'água.
 - [Graphify](https://github.com/Graphify-Labs/graphify) e [Obsidian](https://obsidian.md): ferramentas de terceiros, com licenças próprias, usadas para o grafo de conhecimento (veja [guias/7-graphify-e-obsidian.md](guias/7-graphify-e-obsidian.md)).

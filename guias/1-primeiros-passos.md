@@ -15,6 +15,7 @@ Este tutorial leva você do zero até a primeira edição. Leva uns 20 minutos, 
 | **Git** | baixar e atualizar este repositório | recomendado |
 | Conta **Higgsfield** com créditos | só para o Nível 2 · Higgsfield | não |
 | Assinatura **Google AI Pro/Ultra** (Flow) e, no modo automático, a extensão **Claude in Chrome** | só para o Nível 2 · Google | não |
+| Conta **Meta** (Facebook ou Instagram) no meta.ai e, no modo automático, a extensão **Claude in Chrome** | só para o Nível 2 · Meta AI | não |
 
 Você pode usar o Claude de três jeitos. Todos funcionam com este repositório:
 
@@ -110,11 +111,13 @@ A `watch` pode usar a Groq para transcrever rápido. É grátis dentro de um lim
 
 Sem essa chave tudo funciona igual: o `tools/transcrever.py` transcreve localmente, de graça.
 
-## 6. (Só para o Nível 2) Conectar a Higgsfield ou o Google Flow
+## 6. (Só para o Nível 2) Conectar a Higgsfield, o Google Flow ou o Meta AI
 
 Siga a seção [Conectar a Higgsfield ao Claude](4-nivel-2-higgsfield.md#1-conectar-a-higgsfield-ao-claude). Resumo: no Claude Desktop, **Configurações → Conectores → Adicionar conector personalizado**, URL `https://mcp.higgsfield.ai/mcp`, e login na sua conta.
 
 No **Nível 2 · Google**, não há conector: basta uma conta Google com plano AI Pro/Ultra logada no [Flow](https://labs.google/fx/tools/flow). No modo automático, instale também a extensão **Claude in Chrome**. Detalhes na seção [Os dois modos](6-nivel-2-google-flow.md#1-os-dois-modos).
+
+No **Nível 2 · Meta AI**, também não há conector: basta a sua conta Meta logada no [meta.ai](https://www.meta.ai) e, no modo automático, a extensão **Claude in Chrome**. Leia antes os riscos no topo do [guia 8](8-nivel-2-meta-ai.md).
 
 ---
 
@@ -135,6 +138,7 @@ studio/
 │     ├─ transcricao/  (gerado) texto com o tempo de cada palavra
 │     ├─ hf/           (Nível 2 · Higgsfield) imagens e vídeos gerados na Higgsfield
 │     ├─ flow/         (Nível 2 · Google) imagens e vídeos gerados no Flow + prompts.md
+│     ├─ meta/         (Nível 2 · Meta AI) imagens e vídeos gerados no meta.ai + prompts.md
 │     ├─ plano.md      (gerado) o plano de edição que você aprova
 │     └─ edit.jsx      (Nível 2) roteiro de montagem no Higgsedit
 │
@@ -159,7 +163,7 @@ A pasta `projetos/` inteira fica fora do Git (`.gitignore`), com exceção do ex
 1. Crie a pasta `projetos/001. meu-video/video/` e coloque seu vídeo lá (MP4 ou MOV, já cortado).
 2. Crie `projetos/001. meu-video/prints/` e salve prints de tudo o que você cita no vídeo: sites, notícias, telas de ferramentas.
 3. Abra a pasta `studio` no Claude (Desktop → Code → escolher pasta; ou `claude` no terminal dentro dela).
-4. O Claude vai perguntar se você quer o **Nível 1**, o **Nível 2 · Higgsfield** ou o **Nível 2 · Google (Flow)**. Responda.
+4. O Claude vai perguntar se você quer o **Nível 1**, o **Nível 2 · Higgsfield**, o **Nível 2 · Google (Flow)** ou o **Nível 2 · Meta AI**. Responda.
 5. Diga o que quer. Exemplo:
    ```text
    Edita o projeto 001. Quero o vídeo completo, estilo minimal suíço, sem exagero de zoom.
